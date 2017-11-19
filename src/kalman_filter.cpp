@@ -59,14 +59,14 @@ void KalmanFilter::UpdateEKF(const VectorXd &z) {
     VectorXd z_pred = tools.Convert2Measure(x_); //h(x')
     VectorXd y = z - z_pred;
     // normalization y
-    while(y(1)<-M_PI or y(1)>M_PI){
-        if(y(1)<M_PI){
-            y(1)=y(1)+2*M_PI;
-        }
-        else{
-            y(1)=y(1)-2*M_PI;
-        }
+    while(y(1)<-M_PI){
+        y(1) += 2*M_PI;
     }
+
+    while(y(1)>M_PI){
+        y(1) -= 2*M_PI;
+    }
+
     MatrixXd Ht = H_.transpose();
     MatrixXd S = H_ * P_ * Ht + R_;
     MatrixXd Si = S.inverse();
