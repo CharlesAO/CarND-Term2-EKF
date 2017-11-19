@@ -12,10 +12,10 @@ To run this program, use Term 2 Simulator and uWebSocketIO, follow the steps bel
 ## Accuracy
 
 * Dataset 1
-<img src="https://github.com/jane212/CarND-Term2-EKF/blob/master/output%20images/dataset1.png" width="200">
+<img src="https://github.com/jane212/CarND-Term2-EKF/blob/master/output%20images/dataset1.png" width="500">
 
 * Dataset 2
-<img src="https://github.com/jane212/CarND-Term2-EKF/blob/master/output%20images/dataset2.png" width="200">
+<img src="https://github.com/jane212/CarND-Term2-EKF/blob/master/output%20images/dataset2.png" width="500">
 
 ## Algorithm
 
